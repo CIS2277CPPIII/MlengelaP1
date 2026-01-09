@@ -59,4 +59,6 @@ It is usually not practical to put your lib files in your project folder. Usuall
 
 But if you don’t have your library in your project, I will not be able to run it! 
 
-
+# Sources: 
+# Usage: 
+# Contributions: 
