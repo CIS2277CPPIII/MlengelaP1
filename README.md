@@ -35,7 +35,7 @@ The function of the TestDriver is to test the class using all of its constructor
 4.	Choose Static Library, then click Next.
 5.	**Be sure you go to Properties and set your project to C++20.***
 6.	Name the project **LastnamePerson** and specify the location for the project, then click the **Create** button.
-7.	First, this project is built for pre-compiled headers.  To disable pre-compiled headers, open the project’s properties  -> Configuration Properties -> C/C++ _> PreCompiled Headers.  Set Precompiled headers to Not Using Precompiled Headers.  Click Apply and Ok.  Then you can delete pch.h, pch.cpp.
+7.	First, this project is built for pre-compiled headers.  To disable pre-compiled headers, open the project’s properties  -> Configuration Properties -> C/C++ -> PreCompiled Headers.  Set Precompiled headers to Not Using Precompiled Headers.  Click Apply and Ok.  Then you can delete pch.h, pch.cpp.
 8.	Second, there are two extra files for providing library functions.  We are not doing this; we are making a library out of our classes.  Delete framework.h and LastnamePerson.cpp.
 9.	Copy the Person.h, Person.cpp, Date.h, and Date.cpp into the solution folder where the source code belongs.
 10.	Add your four (existing) files to the project in the Solution Explorer. 
@@ -51,7 +51,7 @@ The function of the TestDriver is to test the class using all of its constructor
 5.	Copy and add your Person.h, Date.h, and TestDriver.cpp into your project folders.  Then add them to your Visual Studio project.
 6.	If you try to build this, you’ll get a lot of LNK errors, since the project can’t find the classes.  The class code is in the .lib file.
 7.	Make a copy of the LastnamePerson.lib file and place it into the folder where the Person.h, Date.h, and Driver.cpp are located in your Tester project.
-8.	In the Solution Explorer window (on the left in the IDE), right-click the project name, and go to properties for the LastnameTesterP1 project.  Or click on Project  PropertiesConfiguration Properties Linker.
+8.	In the Solution Explorer window (on the left in the IDE), right-click the project name, and go to properties for the LastnameTesterP1 project.  Or click on Project -> Properties -> Configuration Properties -> Linker.
 9.	Under LinkerInputAdditional Dependencies, click into space, pick drop-down arrow, Edit, add your library name, LastnamePerson.lib.
 10.	Now the project should build and run.  Theoretically
 
